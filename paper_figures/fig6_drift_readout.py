@@ -45,7 +45,7 @@ TEXT = "#333333"
 CONNECTOR = "#8C8C8C"
 OLD_CLASSES = range(9)  # classes 0-8; the last class has no later learning
 N_TASKS = 10
-DRIFT_YLABEL = "Representational drift\n(1 − cosine similarity to acquisition)"
+DRIFT_YLABEL = "Representational drift\n(1 − cosine similarity\nto acquisition response)"
 LAG_XLABEL = "Number of new-class acquisitions, N"
 
 
