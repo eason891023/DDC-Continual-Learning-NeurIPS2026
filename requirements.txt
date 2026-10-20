@@ -1,0 +1,10 @@
+# Tested with Python 3.10.12. For GPU runs, install the PyTorch build matching your CUDA version
+# (we used torch 2.2.2+cu118 / torchvision 0.17.2+cu118).
+torch==2.2.2
+torchvision==0.17.2
+numpy==1.26.4
+scipy==1.15.3
+matplotlib==3.8.3
+seaborn==0.13.2
+scikit-learn==1.7.1
+tqdm==4.67.1

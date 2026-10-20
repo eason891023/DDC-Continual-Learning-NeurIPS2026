@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "DDC-Continual-Learning-NeurIPS2026"
+license: MIT
+authors:
+  - family-names: Cheng
+    given-names: Chiu-Chang
+  - family-names: Hsu
+    given-names: Ching-Lung
+  - family-names: Chang
+    given-names: Ya-Ning
+  - family-names: Wang
+    given-names: Chao-Hung
+preferred-citation:
+  type: conference-paper
+  title: "Distance-Dependent Connectivity Shapes Continual Learning by Controlling Representational Drift"
+  authors:
+    - family-names: Cheng
+      given-names: Chiu-Chang
+    - family-names: Hsu
+      given-names: Ching-Lung
+    - family-names: Chang
+      given-names: Ya-Ning
+    - family-names: Wang
+      given-names: Chao-Hung
+  collection-title: "Advances in Neural Information Processing Systems"
+  year: 2026

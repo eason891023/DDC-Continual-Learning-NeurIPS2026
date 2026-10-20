@@ -1,0 +1,483 @@
+{
+ "condition": "distance_sigma0.7",
+ "seed": 46,
+ "class_order": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "protocol": {
+  "samples_per_class": 20,
+  "probe_indices_source": "manifests/phase_diagram.json (test_picked)",
+  "sample_state_policy": "reset_before_every_sample",
+  "plasticity_during_probe": false,
+  "T_on": 1000,
+  "T_off": 2000,
+  "T_skip": 100
+ },
+ "selective_vote": {
+  "accuracy_matrix": [
+   [
+    1.0,
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN
+   ],
+   [
+    1.0,
+    1.0,
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN
+   ],
+   [
+    0.949999988079071,
+    0.8999999761581421,
+    0.8999999761581421,
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN
+   ],
+   [
+    0.8500000238418579,
+    0.949999988079071,
+    1.0,
+    0.6499999761581421,
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN
+   ],
+   [
+    0.8999999761581421,
+    0.949999988079071,
+    0.8999999761581421,
+    0.75,
+    0.8999999761581421,
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN
+   ],
+   [
+    0.6499999761581421,
+    0.949999988079071,
+    0.949999988079071,
+    0.3499999940395355,
+    0.8500000238418579,
+    0.5,
+    NaN,
+    NaN,
+    NaN,
+    NaN
+   ],
+   [
+    0.699999988079071,
+    0.949999988079071,
+    0.75,
+    0.6000000238418579,
+    0.800000011920929,
+    0.5,
+    0.699999988079071,
+    NaN,
+    NaN,
+    NaN
+   ],
+   [
+    0.699999988079071,
+    0.949999988079071,
+    0.800000011920929,
+    0.30000001192092896,
+    0.800000011920929,
+    0.44999998807907104,
+    0.75,
+    0.8500000238418579,
+    NaN,
+    NaN
+   ],
+   [
+    0.550000011920929,
+    0.949999988079071,
+    0.8500000238418579,
+    0.30000001192092896,
+    0.8999999761581421,
+    0.44999998807907104,
+    0.800000011920929,
+    0.8500000238418579,
+    0.30000001192092896,
+    NaN
+   ],
+   [
+    0.6000000238418579,
+    0.8500000238418579,
+    0.8500000238418579,
+    0.25,
+    0.75,
+    0.44999998807907104,
+    0.8999999761581421,
+    0.8500000238418579,
+    0.3499999940395355,
+    0.699999988079071
+   ]
+  ],
+  "mean_bwt_excluding_last": -0.10555554429690044,
+  "mean_forgetting_excluding_last": 0.15555554628372192
+ },
+ "drift_records": [
+  {
+   "class": 0,
+   "task_idx": 0,
+   "tasks_since_learning": 0,
+   "cosine_drift": -8.003362061970165e-08
+  },
+  {
+   "class": 0,
+   "task_idx": 1,
+   "tasks_since_learning": 1,
+   "cosine_drift": 0.026776176125745677
+  },
+  {
+   "class": 0,
+   "task_idx": 2,
+   "tasks_since_learning": 2,
+   "cosine_drift": 0.0688139007976809
+  },
+  {
+   "class": 0,
+   "task_idx": 3,
+   "tasks_since_learning": 3,
+   "cosine_drift": 0.07552554064159256
+  },
+  {
+   "class": 0,
+   "task_idx": 4,
+   "tasks_since_learning": 4,
+   "cosine_drift": 0.08538733062075954
+  },
+  {
+   "class": 0,
+   "task_idx": 5,
+   "tasks_since_learning": 5,
+   "cosine_drift": 0.09736100382394797
+  },
+  {
+   "class": 0,
+   "task_idx": 6,
+   "tasks_since_learning": 6,
+   "cosine_drift": 0.10601475176914588
+  },
+  {
+   "class": 0,
+   "task_idx": 7,
+   "tasks_since_learning": 7,
+   "cosine_drift": 0.11453267050717619
+  },
+  {
+   "class": 0,
+   "task_idx": 8,
+   "tasks_since_learning": 8,
+   "cosine_drift": 0.12253584978281673
+  },
+  {
+   "class": 0,
+   "task_idx": 9,
+   "tasks_since_learning": 9,
+   "cosine_drift": 0.12782549510675278
+  },
+  {
+   "class": 1,
+   "task_idx": 1,
+   "tasks_since_learning": 0,
+   "cosine_drift": 0.0
+  },
+  {
+   "class": 1,
+   "task_idx": 2,
+   "tasks_since_learning": 1,
+   "cosine_drift": 0.05459210043359508
+  },
+  {
+   "class": 1,
+   "task_idx": 3,
+   "tasks_since_learning": 2,
+   "cosine_drift": 0.0741995363231408
+  },
+  {
+   "class": 1,
+   "task_idx": 4,
+   "tasks_since_learning": 3,
+   "cosine_drift": 0.10616293992845605
+  },
+  {
+   "class": 1,
+   "task_idx": 5,
+   "tasks_since_learning": 4,
+   "cosine_drift": 0.10259020784447459
+  },
+  {
+   "class": 1,
+   "task_idx": 6,
+   "tasks_since_learning": 5,
+   "cosine_drift": 0.14369237486512576
+  },
+  {
+   "class": 1,
+   "task_idx": 7,
+   "tasks_since_learning": 6,
+   "cosine_drift": 0.15077268981491632
+  },
+  {
+   "class": 1,
+   "task_idx": 8,
+   "tasks_since_learning": 7,
+   "cosine_drift": 0.14283032708157595
+  },
+  {
+   "class": 1,
+   "task_idx": 9,
+   "tasks_since_learning": 8,
+   "cosine_drift": 0.1604492570601107
+  },
+  {
+   "class": 2,
+   "task_idx": 2,
+   "tasks_since_learning": 0,
+   "cosine_drift": 0.0
+  },
+  {
+   "class": 2,
+   "task_idx": 3,
+   "tasks_since_learning": 1,
+   "cosine_drift": 0.006028609101749849
+  },
+  {
+   "class": 2,
+   "task_idx": 4,
+   "tasks_since_learning": 2,
+   "cosine_drift": 0.013722247208187266
+  },
+  {
+   "class": 2,
+   "task_idx": 5,
+   "tasks_since_learning": 3,
+   "cosine_drift": 0.022176211757443554
+  },
+  {
+   "class": 2,
+   "task_idx": 6,
+   "tasks_since_learning": 4,
+   "cosine_drift": 0.038236317292753674
+  },
+  {
+   "class": 2,
+   "task_idx": 7,
+   "tasks_since_learning": 5,
+   "cosine_drift": 0.04873968274686036
+  },
+  {
+   "class": 2,
+   "task_idx": 8,
+   "tasks_since_learning": 6,
+   "cosine_drift": 0.050503003006337366
+  },
+  {
+   "class": 2,
+   "task_idx": 9,
+   "tasks_since_learning": 7,
+   "cosine_drift": 0.053174426676724895
+  },
+  {
+   "class": 3,
+   "task_idx": 3,
+   "tasks_since_learning": 0,
+   "cosine_drift": 0.0
+  },
+  {
+   "class": 3,
+   "task_idx": 4,
+   "tasks_since_learning": 1,
+   "cosine_drift": 0.014094860376261842
+  },
+  {
+   "class": 3,
+   "task_idx": 5,
+   "tasks_since_learning": 2,
+   "cosine_drift": 0.037904598000634726
+  },
+  {
+   "class": 3,
+   "task_idx": 6,
+   "tasks_since_learning": 3,
+   "cosine_drift": 0.0406783477084951
+  },
+  {
+   "class": 3,
+   "task_idx": 7,
+   "tasks_since_learning": 4,
+   "cosine_drift": 0.06018474189427203
+  },
+  {
+   "class": 3,
+   "task_idx": 8,
+   "tasks_since_learning": 5,
+   "cosine_drift": 0.07191999483952305
+  },
+  {
+   "class": 3,
+   "task_idx": 9,
+   "tasks_since_learning": 6,
+   "cosine_drift": 0.08273089241206899
+  },
+  {
+   "class": 4,
+   "task_idx": 4,
+   "tasks_since_learning": 0,
+   "cosine_drift": 0.0
+  },
+  {
+   "class": 4,
+   "task_idx": 5,
+   "tasks_since_learning": 1,
+   "cosine_drift": 0.0214938324797751
+  },
+  {
+   "class": 4,
+   "task_idx": 6,
+   "tasks_since_learning": 2,
+   "cosine_drift": 0.04212431619364865
+  },
+  {
+   "class": 4,
+   "task_idx": 7,
+   "tasks_since_learning": 3,
+   "cosine_drift": 0.05059655752040626
+  },
+  {
+   "class": 4,
+   "task_idx": 8,
+   "tasks_since_learning": 4,
+   "cosine_drift": 0.055496352983980146
+  },
+  {
+   "class": 4,
+   "task_idx": 9,
+   "tasks_since_learning": 5,
+   "cosine_drift": 0.05931383227239284
+  },
+  {
+   "class": 5,
+   "task_idx": 5,
+   "tasks_since_learning": 0,
+   "cosine_drift": 0.0
+  },
+  {
+   "class": 5,
+   "task_idx": 6,
+   "tasks_since_learning": 1,
+   "cosine_drift": 0.007610124919483763
+  },
+  {
+   "class": 5,
+   "task_idx": 7,
+   "tasks_since_learning": 2,
+   "cosine_drift": 0.028866149227689486
+  },
+  {
+   "class": 5,
+   "task_idx": 8,
+   "tasks_since_learning": 3,
+   "cosine_drift": 0.041590050931923805
+  },
+  {
+   "class": 5,
+   "task_idx": 9,
+   "tasks_since_learning": 4,
+   "cosine_drift": 0.04956628675306829
+  },
+  {
+   "class": 6,
+   "task_idx": 6,
+   "tasks_since_learning": 0,
+   "cosine_drift": -9.146609447618914e-08
+  },
+  {
+   "class": 6,
+   "task_idx": 7,
+   "tasks_since_learning": 1,
+   "cosine_drift": 0.0057552362653147116
+  },
+  {
+   "class": 6,
+   "task_idx": 8,
+   "tasks_since_learning": 2,
+   "cosine_drift": 0.017834437258752445
+  },
+  {
+   "class": 6,
+   "task_idx": 9,
+   "tasks_since_learning": 3,
+   "cosine_drift": 0.028072914543551764
+  },
+  {
+   "class": 7,
+   "task_idx": 7,
+   "tasks_since_learning": 0,
+   "cosine_drift": -9.217498875280228e-08
+  },
+  {
+   "class": 7,
+   "task_idx": 8,
+   "tasks_since_learning": 1,
+   "cosine_drift": 0.011256759635030145
+  },
+  {
+   "class": 7,
+   "task_idx": 9,
+   "tasks_since_learning": 2,
+   "cosine_drift": 0.016745796375967625
+  },
+  {
+   "class": 8,
+   "task_idx": 8,
+   "tasks_since_learning": 0,
+   "cosine_drift": 0.0
+  },
+  {
+   "class": 8,
+   "task_idx": 9,
+   "tasks_since_learning": 1,
+   "cosine_drift": 0.014324499829212467
+  },
+  {
+   "class": 9,
+   "task_idx": 9,
+   "tasks_since_learning": 0,
+   "cosine_drift": 1.0047627763132283e-07
+  }
+ ]
+}

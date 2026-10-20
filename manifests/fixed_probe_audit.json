@@ -1,0 +1,18 @@
+{
+ "figures": [
+  "Fig. 6a",
+  "Table 1",
+  "Fig. A (drift supplement) a-b"
+ ],
+ "runner": "experiments.evaluate_fixed_probe_forgetting",
+ "source": "phase_diagram runs (manifests/phase_diagram.json)",
+ "seeds": [
+  43,
+  44,
+  46
+ ],
+ "samples_per_class": 20,
+ "probe_images": "first 20 entries of test_picked per class in manifests/phase_diagram.json",
+ "sample_state_policy": "reset_before_every_sample",
+ "plasticity_during_probe": false
+}

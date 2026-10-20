@@ -1,0 +1,119 @@
+{
+ "figures": [
+  "Fig. 3",
+  "Table 6"
+ ],
+ "runner": "experiments.cl_sigma_sweep",
+ "class_order": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "T_on": 1000,
+ "T_off": 2000,
+ "T_skip": 100,
+ "burn_in_on": 2000,
+ "burn_in_off": 3000,
+ "target_mean": 0.05,
+ "exc_neurons": 4096,
+ "inh_neurons": 1024,
+ "per_class_train": 100,
+ "per_class_test": 100,
+ "training_subset": "get_per_class_subsets(MNIST train, 100, seed=<run seed>)",
+ "test_subset": "get_per_class_subsets(MNIST test, 100, seed=42), identical for every run",
+ "evaluation_state_policy": "legacy_continuous (state carried across test images)",
+ "readout": "selective vote",
+ "seeds": {
+  "distance_sigma0.4": [
+   42,
+   43,
+   44,
+   45,
+   46,
+   47,
+   48,
+   49,
+   50,
+   51
+  ],
+  "distance_sigma0.5": [
+   42,
+   43,
+   44,
+   45,
+   46,
+   47,
+   48,
+   49,
+   58,
+   59
+  ],
+  "distance_sigma0.7": [
+   42,
+   43,
+   44,
+   45,
+   46,
+   47,
+   48,
+   49,
+   58,
+   59
+  ],
+  "distance_sigma1.0": [
+   42,
+   43,
+   44,
+   45,
+   46,
+   47,
+   48,
+   49,
+   58,
+   59
+  ],
+  "distance_sigma1.3": [
+   42,
+   43,
+   44,
+   45,
+   46,
+   47,
+   48,
+   49,
+   58,
+   59
+  ],
+  "distance_sigma2.0": [
+   42,
+   43,
+   44,
+   45,
+   46,
+   47,
+   48,
+   49,
+   58,
+   59
+  ],
+  "random": [
+   42,
+   43,
+   44,
+   45,
+   46,
+   47,
+   48,
+   49,
+   58,
+   59
+  ]
+ }
+}

@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Downloaded datasets, cached connectivity masks, and raw outputs (regenerate with the runners)
+data/
+mask/
+outputs/
+*.pt
+*.dat
+*.npy
+*.npz
+
+# Regenerated figures
+figures/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store

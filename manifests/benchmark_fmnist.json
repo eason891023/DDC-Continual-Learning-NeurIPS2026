@@ -1,0 +1,60 @@
+{
+ "figures": [
+  "Fig. A (Fashion-MNIST)"
+ ],
+ "runner": "experiments.cl_sigma_sweep --dataset fmnist",
+ "class_order": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "T_on": 1000,
+ "T_off": 2000,
+ "T_skip": 100,
+ "burn_in_on": 2000,
+ "burn_in_off": 3000,
+ "target_mean": 0.05,
+ "exc_neurons": 4096,
+ "inh_neurons": 1024,
+ "per_class_train": 100,
+ "per_class_test": 100,
+ "evaluation_state_policy": "legacy_continuous",
+ "readout": "selective vote",
+ "seeds": {
+  "distance_sigma0.5": [
+   42,
+   43,
+   44,
+   45,
+   46
+  ],
+  "distance_sigma0.7": [
+   42,
+   43,
+   44,
+   45,
+   46
+  ],
+  "distance_sigma1.0": [
+   42,
+   43,
+   44,
+   45,
+   46
+  ],
+  "random": [
+   42,
+   43,
+   44,
+   45,
+   46
+  ]
+ }
+}

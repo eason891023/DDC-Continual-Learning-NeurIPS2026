@@ -1,0 +1,124 @@
+{
+ "figures": [
+  "Fig. 2",
+  "Fig. 4",
+  "Fig. A6",
+  "Section 4",
+  "Section 6"
+ ],
+ "runner": "experiments.cl_sigma_sweep --save_task_snapshots --task_snapshot_weights both",
+ "class_order": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "T_on": 1000,
+ "T_off": 2000,
+ "T_skip": 100,
+ "burn_in_on": 2000,
+ "burn_in_off": 3000,
+ "target_mean": 0.05,
+ "exc_neurons": 4096,
+ "inh_neurons": 1024,
+ "per_class_train": 100,
+ "per_class_test": 100,
+ "seeds": {
+  "distance_sigma0.5": [
+   47,
+   48,
+   49,
+   58,
+   59
+  ],
+  "distance_sigma0.7": [
+   47,
+   48,
+   49,
+   58,
+   59
+  ],
+  "distance_sigma1.0": [
+   47,
+   48,
+   49,
+   58,
+   59
+  ],
+  "distance_sigma1.3": [
+   47,
+   48,
+   49,
+   58,
+   59
+  ],
+  "distance_sigma2.0": [
+   47,
+   48,
+   49,
+   58,
+   59
+  ],
+  "random": [
+   47,
+   48,
+   49,
+   58,
+   59
+  ],
+  "distance_sigma0.4": [
+   42,
+   43,
+   44,
+   45,
+   46,
+   47,
+   48,
+   49,
+   50,
+   51
+  ]
+ },
+ "fig4_and_figA6_seeds": {
+  "distance_sigma0.4": [
+   42,
+   43,
+   44,
+   45,
+   46
+  ],
+  "other conditions": [
+   47,
+   48,
+   49,
+   58,
+   59
+  ]
+ },
+ "analyses": {
+  "experiments.money_plot (assembly overlap)": {
+   "top_k": 100,
+   "readout": "selective"
+  },
+  "experiments.benchmark_interference (contention, directional interference)": {
+   "task_lag": 1,
+   "synapse_types": [
+    "ee",
+    "input"
+   ],
+   "top_k_ee": 4000,
+   "top_k_input": 2000,
+   "readout": "selective"
+  },
+  "experiments.spatial_geography_analysis (spans, distance-resolved contention)": {
+   "top_k_ee": 4000
+  },
+  "experiments.spatial_geography_analysis_extra (pooled consecutive contention)": {}
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "figures": [
+  "Appendix G scope screens"
+ ],
+ "runners": {
+  "cifar10_gray28": "experiments.cl_generalization_screen",
+  "plasticity_triplet_only": "experiments.cl_plasticity_robustness_screen"
+ },
+ "cifar10_gray28": {
+  "dataset": "cifar10_gray28",
+  "preprocessing": "Grayscale(1) -> Resize(28,28) -> ToTensor",
+  "conditions": [
+   {
+    "mode": "distance",
+    "sigma": 0.4,
+    "condition": "distance_sigma0.4"
+   },
+   {
+    "mode": "distance",
+    "sigma": 0.7,
+    "condition": "distance_sigma0.7"
+   },
+   {
+    "mode": "random",
+    "sigma": 1.0,
+    "condition": "random"
+   }
+  ],
+  "seeds": [
+   80
+  ],
+  "per_class": 10,
+  "test_per_class": 10,
+  "class_order": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "evaluation_state_policy": "sample_reset",
+  "full_checkpoints_saved": false
+ },
+ "plasticity_triplet_only": {
+  "dataset": "mnist",
+  "modes": [
+   "distance",
+   "random"
+  ],
+  "sigma": 0.7,
+  "plasticity_variants": {
+   "full": "submitted rule",
+   "triplet_only_exc": "beta=0 and delta=0 in input-to-E and recurrent E-to-E LTP; triplet STDP and inhibitory homeostatic plasticity retained"
+  },
+  "seeds": [
+   80
+  ],
+  "per_class": 10,
+  "test_per_class": 10,
+  "evaluation_state_policy": "sample_reset",
+  "full_checkpoints_saved": false
+ }
+}
